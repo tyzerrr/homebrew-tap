@@ -5,20 +5,20 @@
 class TmuxSessionizer < Formula
   desc "Tmux session manager with fzf"
   homepage "https://github.com/TlexCypher/tmux-sessionizer"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/TlexCypher/tmux-sessionizer/releases/download/v0.0.2/tmux-sessionizer_Darwin_x86_64.tar.gz"
-      sha256 "e72d2a30a52f39c07434f1a66c8677ceface681cda630be7afe84b46bc924603"
+      url "https://github.com/TlexCypher/tmux-sessionizer/releases/download/v0.0.3/tmux-sessionizer_Darwin_x86_64.tar.gz"
+      sha256 "756fabec4ccd37feb4650ca85d072d0a065b0a5bd3008ee12b3661adea207a27"
 
       def install
         bin.install "tmux-sessionizer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/TlexCypher/tmux-sessionizer/releases/download/v0.0.2/tmux-sessionizer_Darwin_arm64.tar.gz"
-      sha256 "182cb1a2c58e85584d0720ee61f460f087c40138a51d74e5e5417ecf79ebf904"
+      url "https://github.com/TlexCypher/tmux-sessionizer/releases/download/v0.0.3/tmux-sessionizer_Darwin_arm64.tar.gz"
+      sha256 "9d7498f7c1f707acb3d308f7d1ec9874c38880bc66cc8a8147acdd173993db26"
 
       def install
         bin.install "tmux-sessionizer"
@@ -29,8 +29,8 @@ class TmuxSessionizer < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TlexCypher/tmux-sessionizer/releases/download/v0.0.2/tmux-sessionizer_Linux_x86_64.tar.gz"
-        sha256 "6e131673a1b93cfcaf9dc4d02c5f82ee268fff0698141fd320fac1e7ee81b32c"
+        url "https://github.com/TlexCypher/tmux-sessionizer/releases/download/v0.0.3/tmux-sessionizer_Linux_x86_64.tar.gz"
+        sha256 "a24330709c006ee2f5796cd192ddeb29ee1ccacd63ddae5556dbd0e678b29289"
 
         def install
           bin.install "tmux-sessionizer"
@@ -39,8 +39,8 @@ class TmuxSessionizer < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TlexCypher/tmux-sessionizer/releases/download/v0.0.2/tmux-sessionizer_Linux_arm64.tar.gz"
-        sha256 "62ef065d417d3a19dc901e45a18de0f7a282b0ca7a9af82088af9aeab7c46fcc"
+        url "https://github.com/TlexCypher/tmux-sessionizer/releases/download/v0.0.3/tmux-sessionizer_Linux_arm64.tar.gz"
+        sha256 "88c349e18555361a713ddf93197dd9ee4d97abbb4e47fff3b2a34c30772eb970"
 
         def install
           bin.install "tmux-sessionizer"
