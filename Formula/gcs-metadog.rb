@@ -10,7 +10,7 @@ class GcsMetadog < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/TlexCypher/gcs-metadog/releases/download/v0.0.1/gcs-metadog_0.0.1_Darwin_64bit.tar.gz"
-      sha256 "cad882bd01dbe279496e569fbdc1ede560b7993ca25e33dfe4b563492eefd6f8"
+      sha256 "620b99a27e4a8e3525dcddd7410e6ba09b2e5b0707675b518c018ee2a316c9ea"
 
       def install
         bin.install "gmd"
@@ -18,7 +18,7 @@ class GcsMetadog < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/TlexCypher/gcs-metadog/releases/download/v0.0.1/gcs-metadog_0.0.1_Darwin_ARM64.tar.gz"
-      sha256 "4cf6fd1798a7a2aa17abaffdaa6ab482191605e77495ae9b9510ca1775e425ff"
+      sha256 "5ec1a2e9420b975fb43a9489417448803c03bb47e5e7c336171fd34bc47234e7"
 
       def install
         bin.install "gmd"
@@ -30,7 +30,7 @@ class GcsMetadog < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/TlexCypher/gcs-metadog/releases/download/v0.0.1/gcs-metadog_0.0.1_Linux_64bit.tar.gz"
-        sha256 "22bf0f794aa09692a412a03d07bdfabba351fa83a42a26d83d26a1acefa5186c"
+        sha256 "f1337ca7c917bcc907e23cbc3503c6a3fd4b1e9e255bd2be11bd61d563a08726"
 
         def install
           bin.install "gmd"
@@ -40,7 +40,7 @@ class GcsMetadog < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/TlexCypher/gcs-metadog/releases/download/v0.0.1/gcs-metadog_0.0.1_Linux_ARM64.tar.gz"
-        sha256 "5c024167138cf097a2a4fa875a3d3f87bdcb5d514857cf4da968d55af15f9e04"
+        sha256 "0775eea2b97fc0d5028ec735933070b2395f5418b9d7590f5920c65d8b384ec6"
 
         def install
           bin.install "gmd"
